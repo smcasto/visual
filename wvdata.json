@@ -1,0 +1,127 @@
+[
+    {
+        "year": 2019,
+        "air": 7.6,
+        "drug": 48.3,
+        "suicide": 21.2
+    },
+    {
+        "year": 2018,
+        "air": 7.8,
+        "drug": 41.4,
+        "suicide": 19.4,
+        "mines": 126,
+        "surface": 62,
+        "underground": 64
+    },
+    {
+        "year": 2017,
+        "air": 7.7,
+        "drug": 35.3,
+        "suicide": 17.8
+    },
+    {
+        "year": 2016,
+        "air": 7.9,
+        "drug": 32.2,
+        "suicide": 18.9
+    },
+    {
+        "year": 2015,
+        "air": 9.4,
+        "drug": 32.4,
+        "suicide": 16.8,
+        "mines": 456,
+        "surface": 227,
+        "underground": 229
+    },
+    {
+        "year": 2014,
+        "air": 9.8,
+        "drug": 31.3,
+        "suicide": 17.3,
+        "mines": 205,
+        "surface": 99,
+        "underground": 106
+    },
+    {
+        "year": 2013,
+        "air": 10.7,
+        "drug": 25.2,
+        "suicide": 16.1,
+        "mines": 512,
+        "surface": 243,
+        "underground": 269
+    },
+    {
+        "year": 2012,
+        "air": 11.2,
+        "drug": 22,
+        "suicide": 14.4,
+        "mines": 538,
+        "surface": 246,
+        "underground": 292
+    },
+    {
+        "year": 2011,
+        "air": 11.9,
+        "drug": 20,
+        "mines": 527,
+        "surface": 232,
+        "underground": 295
+    },
+    {
+        "year": 2010,
+        "air": 12.8,
+        "drug": 22.6,
+        "mines": 505,
+        "surface": 215,
+        "underground": 290
+    },
+    {
+        "year": 2009,
+        "air": 13.6,
+        "drug": 17.6,
+        "mines": 537,
+        "surface": 232,
+        "underground": 305
+    },
+    {
+        "year": 2008,
+        "air": 14.1,
+        "drug": 16.4,
+        "mines": 540,
+        "surface": 240,
+        "underground": 300
+    },
+    {
+        "year": 2007,
+        "air": 13.8,
+        "drug": 14.6,
+        "mines": 552,
+        "surface": 244,
+        "underground": 308
+    },
+    {
+        "year": 2006,
+        "air": 13.9,
+        "mines": 601,
+        "surface": 271,
+        "underground": 330
+    },
+    {
+        "year": 2005,
+        "air": 13.7,
+        "mines": 574,
+        "surface": 245,
+        "underground": 329
+    },
+    {
+        "year": 2004,
+        "air": 14
+    },
+    {
+        "year": 2003,
+        "air": 14.4
+    }
+]
