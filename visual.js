@@ -9,32 +9,12 @@ var dataPromise= d3.json("wvdata.json");
         }
     )
 
+
 var setBanner = function(msg)
 {
     d3.select("#spread h2")
         .text(msg);
 }
-
-/*var getDrugdeaths = function(entry)
-{return entry.drug;}
-
-var getMines = function(entry)
-{return entry.mines;}
-
-var getSuicides = function(entry)
-{return entry.suicide;}
-
-var getSurfacemines = function(entry)
-{return entry.surface;}
-
-var getUndergroundmines = function(entry)
-{return entry.underground;}
-
-var getYears = function(entry)
-{return entry.year;}
-
-var getAir = function(entry)
-{return entry.air;}*/
 
 var drawScatter = function(entries,target,xScale,yScale,xProp,yProp)
 
@@ -117,11 +97,11 @@ var initGraph = function(target,entries)
              margins.top+")");
         
         var yScale = d3.scaleLinear()
-        .domain([0,600])
+        .domain([0,50])
         .range([graph.height,0])
         
     var xScale = d3.scaleLinear()
-        .domain([0,50])
+        .domain([0,600])
                 
         .range([0,graph.width])
            
@@ -144,63 +124,23 @@ var initButtons = function(entries,target,xScale,yScale)
     .on("click",function()
     {
         drawScatter(entries,target,
-              xScale,yScale,"suicide","mines");
+              xScale,yScale,"mines","suicide");
     })
     
     d3.select("#drug")
     .on("click",function()
     {
         drawScatter(entries,target,
-              xScale,yScale,"drug","mines");
+              xScale,yScale,"mines","drug");
     })
     
     d3.select("#air")
     .on("click",function()
     {
         drawScatter(entries,target,
-              xScale,yScale,"air","mines");
+              xScale,yScale,"mines","air");
     })
-    
-     d3.select("#suicide2")
-    .on("click",function()
-    {
-        drawScatter(entries,target,
-              xScale,yScale,"suicide","underground");
-    })
-    
-    d3.select("#drug2")
-    .on("click",function()
-    {
-        drawScatter(entries,target,
-              xScale,yScale,"drug","underground");
-    })
-    
-    d3.select("#air2")
-    .on("click",function()
-    {
-        drawScatter(entries,target,
-              xScale,yScale,"air","underground");
-    })
-        d3.select("#suicide3")
-    .on("click",function()
-    {
-        drawScatter(entries,target,
-              xScale,yScale,"suicide","surface");
-    })
-    
-    d3.select("#drug3")
-    .on("click",function()
-    {
-        drawScatter(entries,target,
-              xScale,yScale,"drug","surface");
-    })
-    
-    d3.select("#air3")
-    .on("click",function()
-    {
-        drawScatter(entries,target,
-              xScale,yScale,"air","surface");
-    })
+
 }
 
 
