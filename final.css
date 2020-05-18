@@ -1,0 +1,30 @@
+body{
+    
+    background-color: gainsboro;
+}
+
+h1{
+    background-color:cadetblue;
+        text-align: center;
+        text-shadow: 3px 3px 4px gainsboro;
+}
+
+h2{
+    background-color:cadetblue;
+    text-align: center
+}
+
+.graph-container
+{
+    background-color: aliceblue;
+}
+
+
+
+#biblio
+{
+    text-align: center;
+        position:relative;
+        bottom: 0px;
+        margin-top: 70px;
+}
