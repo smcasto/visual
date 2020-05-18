@@ -3,14 +3,17 @@ var dataPromise= d3.json("wvdata.json");
             console.log("worked"); 
         console.log(entries);
             initGraph("#graph",entries);
+ drawScatter(entries,target,xScale,yScale,"mines","suicide");
         },
         function(err){
             console.log("failed", err);
         }
+ 
+
     )
 var getMine = function(entry)
 {
-    return entry.mine
+    return entry.mines
 }
 
 var getSuicide = function(entry)
@@ -48,11 +51,11 @@ d3.select("#graph")
 .duration(700)
 .attr("cx", function(entry)
 {
-return xScale(Hopelessness(entry));    
+return xScale(entry[xProp]);    
 })
 .attr("cy",function(entry)
     {
-return yScale(getMine(entry));    
+return yScale(entry[yProp]);    
     })
 .attr("r",4)
 .attr("fill", "green")
